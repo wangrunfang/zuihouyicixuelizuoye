@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>chemistry</title>
+		<style>
+			/* 清浮动 */
+			.clear:after{
+				content: ' ';
+				display: block;
+				height: 0;
+				clear: both;
+			}
+			/* 清样式 */
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+				color: #000;
+			}
+			ul{
+				list-style-type: none;
+			}
+			.beijing{
+				color: #000;
+			}
+			.banquan{
+				background-color:#000;
+				color:#fff;
+				height:120px;
+				text-align:center;
+			}
+			.head{
+				background-color:#000;
+				color:pink;
+				height:120px;
+			}
+			.h2{
+				text-align:center;
+				font-size: 10px;
+				float: left;
+			}
+			p{
+				background-color:#000;
+				font-size:20px;
+				color:white;
+				height:73px;
+				width:360px;
+				line-height:73px;
+				padding-left:38px;
+			}
+			.sousuo{
+				
+			}
+
+				
+
+		</style>
+			
+			
+			
+			
+	</head>
+	<body>
+		<div class="head"><!-- .head设置宽度，居中 -->
+			<h2>化学家</h2><!-- h2左浮动 -->
+			<img src="images/logotc.jpg"/><!-- 图片设置大小，也可以是背景图片 -->
+		</div>
+		<div class="sousuo">
+			<form>
+				<input type="text" name="shuru" value="输入关键词" class="search"/>
+				<input type="button" class="submit"/>
+			</form>
+			<!-- form设置居中 。.sousuo设置和head同样的宽度，居中-->
+		</div>
+		<div class="renwu">
+			<ul>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+			<a>
+				<img src="images/1.png"/>
+				<!-- 为了美观，设置图片的宽度和高度，同时也设置好和图片对应的p标签的宽度和高度。使每一个a标签都向左浮动。（只要设置浮动，其父元素就要清浮动） -->
+				<p>拉瓦锡：近代化学之父</p>
+				<!-- p设置绝对定位，因此其父元素a设置相对定位（但是不设置相应属性的值） -->
+			</a>
+			<a>
+				<img src="images/2.png"/>
+				<p>道尔顿：近代原子理论的提出者</p>
+				<!-- p设置绝对定位，因此其父元素a设置相对定位（但是不设置相应属性的值） -->
+			</a>
+			<a>
+				<img src="images/3.png"/>
+				<p>门捷列夫：发现元素周期律</p>
+				<!-- p设置绝对定位，因此其父元素a设置相对定位（但是不设置相应属性的值） -->
+			</a>
+			<a>
+				<img src="images/4.png"/>
+				<p>波义耳：把化学确立为科学</p>
+				<!-- p设置绝对定位，因此其父元素a设置相对定位（但是不设置相应属性的值） -->
+			</a>
+			<a>
+				<img src="images/5.png"/>
+				<p>舍勒：氧气的发现人之一</p>
+				<!-- p设置绝对定位，因此其父元素a设置相对定位（但是不设置相应属性的值） -->
+			</a>
+			<a>
+				<img src="images/6.png"/>
+				<p>鲍林：提出共振论</p>
+				<!-- p设置绝对定位，因此其父元素a设置相对定位（但是不设置相应属性的值） -->
+			</a>
+		</div>
+		<div class="banner">
+			<!-- banner图插入背景图片就行 -->
+		</div>
+		<div class="beijing">
+			<!-- 设置背景色，写明文字就行 -->
+		</div>
+		<div class="banquan">
+			<p>版权声明归个人所有</p>
+		</div>
+	</body>
+</html>
